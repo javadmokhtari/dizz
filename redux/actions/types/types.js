@@ -1,0 +1,3 @@
+export const GO_NEXT_STEP = 'GO_NEXT_STEP'
+export const GO_PREVIOUS_STEP = 'GO_PREVIOUS_STEP'
+export const DUMMY_ADD_CHOICE = 'DUMMY_ADD_CHOICE'
