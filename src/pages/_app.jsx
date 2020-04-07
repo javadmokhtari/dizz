@@ -3,6 +3,7 @@ import {Provider} from 'react-redux' // for later redux implementation
 import withRedux from 'next-redux-wrapper' // for creating store per request
 import store from '../../redux/store'
 
+// /* eslint-disable */
 
 function Dizz({ Component, pageProps }) {
     // Component is the active page

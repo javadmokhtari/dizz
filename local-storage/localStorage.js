@@ -7,7 +7,6 @@ export const loadState = () => {
     // why we use try - catch
     // because user can don't allow us to use localStorage
 
-    console.log('load state called')
     try {
         let serializedState = localStorage.getItem(STATE_NAME)
         if (serializedState === null) {
@@ -24,6 +23,6 @@ export const saveState = (state) => {
         const serializedState = JSON.stringify(state)
         localStorage.setItem(STATE_NAME, serializedState)
     } catch {
-        // ignore write errors
+        // ignore errors
     }
 }

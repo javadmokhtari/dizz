@@ -10,14 +10,7 @@ function Home(props) {
   let currentStep = useSelector(state => state.temp.currentStep)
 
   const dispatch = useDispatch()
-  // hint: use useCallback with useDispatch to memoize it and prevent unnecessary renders from childs
-
-  // console.log(props)
-
-  const store = useStore()
-  console.log(store)
-
-  
+  // hint: use useCallback with useDispatch to memoize it and prevent unnecessary renders from childs  
 
   return (
     <div>
