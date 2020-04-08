@@ -1,7 +1,14 @@
 /* General designs, like header and footer designs or defined colors are here */
+/* all fonts in public/static/fonts are not obligatory. So you should remove some of them in proper time */
 
 :root {
     --green: #316229;
+    --over-green: #f8ecd6;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 @font-face {
@@ -23,7 +30,32 @@ src: url('../../public/static/fonts/Parastoo-Bold.eot?#iefix') format('embedded-
         url('../../public/static/fonts/Parastoo-Bold.ttf') format('truetype');
 font-weight: bold;
 }
-header {
-    background-color: var(--green)
 
+p, h3 {
+    margin-bottom: 0;
+}
+
+header {
+    background-color: var(--green);
+    color: var(--over-green);
+    font-family: Parastoo;
+    font-weight: normal;
+    direction: rtl;
+    padding: 1%;
+}
+
+header div.col, footer div.col {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--over-green);
+    font-family: Parastoo;
+    font-weight: normal;
+    direction: rtl;
+    position: absolute;
+    bottom: 0;
 }
