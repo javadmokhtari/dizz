@@ -2,6 +2,9 @@
 import {Provider} from 'react-redux' // for later redux implementation
 import withRedux from 'next-redux-wrapper' // for creating store per request
 import store from '../../redux/store'
+import Layout from '../components/layout'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../styles/global.css'
 
 // /* eslint-disable */
 
@@ -12,7 +15,9 @@ function Dizz({ Component, pageProps }) {
 
     return (
     <Provider store={store}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Provider> )
   }
   

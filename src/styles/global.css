@@ -1,0 +1,29 @@
+/* General designs, like header and footer designs or defined colors are here */
+
+:root {
+    --green: #316229;
+}
+
+@font-face {
+    font-family: Parastoo;
+    src: url('../../public/static/fonts/Parastoo.eot');
+    src: url('../../public/static/fonts/Parastoo.eot?#iefix') format('embedded-opentype'),
+         url('../../public/static/fonts/Parastoo.woff2') format('woff2'),
+         url('../../public/static/fonts/Parastoo.woff') format('woff'),
+         url('../../public/static/fonts/Parastoo.ttf') format('truetype');
+    font-weight: normal;
+}
+  
+@font-face {
+font-family: Parastoo;
+src: url('../../public/static/fonts/Parastoo-Bold.eot');
+src: url('../../public/static/fonts/Parastoo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/static/fonts/Parastoo-Bold.woff2') format('woff2'),
+        url('../../public/static/fonts/Parastoo-Bold.woff') format('woff'),
+        url('../../public/static/fonts/Parastoo-Bold.ttf') format('truetype');
+font-weight: bold;
+}
+header {
+    background-color: var(--green)
+
+}
