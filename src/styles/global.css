@@ -2,13 +2,15 @@
 /* all fonts in public/static/fonts are not obligatory. So you should remove some of them in proper time */
 
 :root {
-    --green: #316229;
+    --light-green: #cce7cc;
     --over-green: #f8ecd6;
+    --dark-blue: #0a0e3e;
+    --med-blue: #3b5dd7;
+    --dark-white: #ebe5e5;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
+html, body {
+    height: 100%;
 }
 
 @font-face {
@@ -34,28 +36,41 @@ font-weight: bold;
 p, h3 {
     margin-bottom: 0;
 }
-
-header {
-    background-color: var(--green);
-    color: var(--over-green);
-    font-family: Parastoo;
-    font-weight: normal;
-    direction: rtl;
-    padding: 1%;
+#header {
+    background-color: var(--light-green);
+    text-align: right;
+    font-family: Parastoo; 
+    padding: 1% 0;
+}
+#header h3 {
+    display: inline;
 }
 
-header div.col, footer div.col {
-    display: flex;
-    justify-content: space-around;
+#header-row {
     align-items: center;
 }
 
-footer {
-    background-color: var(--green);
-    color: var(--over-green);
+#level-content {
+    text-align: left;
+}
+#level-content span {
+    background-color: var(--med-blue);
+    color: var(--dark-white);
+    padding: 1.7% 6%;
+    border-radius: 20px;
+}
+#footer {
     font-family: Parastoo;
-    font-weight: normal;
-    direction: rtl;
     position: absolute;
+    width: 100%;
+    background-color: var(--dark-blue);
+    color: var(--dark-white);
     bottom: 0;
+    min-height: 10%;
+    text-align: right;
+    align-items: center;
+}
+
+#footer-content p {
+    text-align: center;
 }
